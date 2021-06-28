@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-base-randn",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Standard normal pseudorandom numbers.",
   "license": "Apache-2.0",
   "author": {
