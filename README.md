@@ -20,7 +20,7 @@ limitations under the License.
 
 # randn
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Standard normally distributed pseudorandom numbers.
 
@@ -398,8 +398,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]: normally distributed pseudorandom numbers using the improved Ziggurat method.
--   [`@stdlib/random/base/randu`][@stdlib/random/base/randu]: uniformly distributed pseudorandom numbers between 0 and 1.
+-   <span class="package-name">[`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the improved Ziggurat method.</span>
+-   <span class="package-name">[`@stdlib/random/base/randu`][@stdlib/random/base/randu]</span><span class="delimiter">: </span><span class="description">uniformly distributed pseudorandom numbers between 0 and 1.</span>
 
 </section>
 
@@ -450,8 +450,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-base-randn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-base-randn?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/random-base-randn.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/random-base-randn/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
