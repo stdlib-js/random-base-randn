@@ -24,14 +24,30 @@ limitations under the License.
 
 > Standard normally distributed pseudorandom numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-randn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import randn from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randn@deno/mod.js';
+var randn = require( '@stdlib/random-base-randn' );
 ```
 
 #### randn()
@@ -82,7 +98,7 @@ var r = rand();
 To use a custom PRNG as the underlying source of uniformly distributed pseudorandom numbers, set the `prng` option.
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd' );
 
 var rand = randn.factory({
     'prng': minstd.normalized
@@ -349,7 +365,7 @@ var o = rand.toJSON();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randn from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randn@deno/mod.js';
+var randn = require( '@stdlib/random-base-randn' );
 
 var seed;
 var rand;
@@ -406,7 +422,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -423,7 +439,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -436,8 +452,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-base-randn.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-base-randn
 
-[test-image]: https://github.com/stdlib-js/random-base-randn/actions/workflows/test.yml/badge.svg
-[test-url]: https://github.com/stdlib-js/random-base-randn/actions/workflows/test.yml
+[test-image]: https://github.com/stdlib-js/random-base-randn/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/random-base-randn/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-base-randn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-base-randn?branch=main
@@ -449,13 +465,6 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/random-base-randn/tree/deno
-[umd-url]: https://github.com/stdlib-js/random-base-randn/tree/umd
-[esm-url]: https://github.com/stdlib-js/random-base-randn/tree/esm
-
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
@@ -463,17 +472,25 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/random-base-randn/tree/deno
+[umd-url]: https://github.com/stdlib-js/random-base-randn/tree/umd
+[esm-url]: https://github.com/stdlib-js/random-base-randn/tree/esm
+[branches-url]: https://github.com/stdlib-js/random-base-randn/blob/main/branches.md
+
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-base-randn/main/LICENSE
 
-[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat/tree/deno
+[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat
 
-[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller/tree/deno
+[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat/tree/deno
+[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat
 
-[@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu/tree/deno
+[@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu
 
 <!-- </related-links> -->
 
