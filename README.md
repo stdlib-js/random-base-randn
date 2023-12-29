@@ -499,8 +499,6 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat
-
 [@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu
 
 <!-- </related-links> -->
