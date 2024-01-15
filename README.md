@@ -417,6 +417,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/random-iter/randn`][@stdlib/random/iter/randn]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a standard normal distribution.</span>
+-   <span class="package-name">[`@stdlib/random-streams/randn`][@stdlib/random/streams/randn]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution.</span>
 -   <span class="package-name">[`@stdlib/random-base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the improved Ziggurat method.</span>
 -   <span class="package-name">[`@stdlib/random-base/randu`][@stdlib/random/base/randu]</span><span class="delimiter">: </span><span class="description">uniformly distributed pseudorandom numbers between 0 and 1.</span>
 
@@ -498,6 +500,10 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller
 
 <!-- <related-links> -->
+
+[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn
+
+[@stdlib/random/streams/randn]: https://github.com/stdlib-js/random-streams-randn
 
 [@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu
 
