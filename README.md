@@ -35,38 +35,30 @@ limitations under the License.
 
 > Standard normally distributed pseudorandom numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-randn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-randn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randn@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var randn = require( 'path/to/vendor/umd/random-base-randn/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randn@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.randn;
-})();
-</script>
+var randn = require( '@stdlib/random-base-randn' );
 ```
 
 #### randn()
@@ -383,13 +375,8 @@ var o = rand.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randn@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randn = require( '@stdlib/random-base-randn' );
 
 var seed;
 var rand;
@@ -416,11 +403,6 @@ rand = randn.factory({
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -435,6 +417,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/random-iter/randn`][@stdlib/random/iter/randn]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a standard normal distribution.</span>
+-   <span class="package-name">[`@stdlib/random-streams/randn`][@stdlib/random/streams/randn]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution.</span>
 -   <span class="package-name">[`@stdlib/random-base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the improved Ziggurat method.</span>
 -   <span class="package-name">[`@stdlib/random-base/randu`][@stdlib/random/base/randu]</span><span class="delimiter">: </span><span class="description">uniformly distributed pseudorandom numbers between 0 and 1.</span>
 
@@ -511,13 +495,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-base-randn/main/LICENSE
 
-[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat/tree/umd
+[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat
 
-[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller/tree/umd
+[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu/tree/umd
+[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn
+
+[@stdlib/random/streams/randn]: https://github.com/stdlib-js/random-streams-randn
+
+[@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu
 
 <!-- </related-links> -->
 
